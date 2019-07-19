@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:background="#FDBDD4"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/tv_location"
+        android:text="本地音乐列表"
+        android:textSize="45sp"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:background="#44eeee"
+        android:id="@+id/linearplay"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/playing"
+            android:text="当前正在播放:"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/playing_songName"
+            android:text="有何不可"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:background="#FDBDD4"
+        android:layout_below="@id/linearplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_item"></ListView>
+</RelativeLayout>
